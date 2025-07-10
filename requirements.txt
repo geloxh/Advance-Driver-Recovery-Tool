@@ -1,0 +1,15 @@
+# Advanced Flash Drive Recovery Tool - Requirements
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+pywin32>=227; platform_system=="Windows"  # Windows API access for drive operations
+
+# Optional dependencies for enhanced functionality
+psutil>=5.8.0  # System and process utilities
+pillow>=8.0.0  # Image processing for recovered image files
+python-magic>=0.4.24; platform_system!="Windows"  # File type detection on Linux/Mac
+python-magic-bin>=0.4.14; platform_system=="Windows"  # File type detection on Windows
+
+# Development and testing
+pytest>=6.0.0  # Testing framework
+pytest-cov>=2.10.0  # Coverage testing

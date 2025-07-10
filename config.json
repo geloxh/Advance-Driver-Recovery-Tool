@@ -1,0 +1,42 @@
+{
+  "recovery_settings": {
+    "chunk_size_mb": 1,
+    "max_file_size_mb": 50,
+    "scan_timeout_hours": 24,
+    "enable_deep_scan": true,
+    "verify_recovered_files": true
+  },
+  "file_types": {
+    "enable_image_recovery": true,
+    "enable_document_recovery": true,
+    "enable_audio_recovery": true,
+    "enable_video_recovery": true,
+    "enable_archive_recovery": true,
+    "enable_executable_recovery": false
+  },
+  "output_settings": {
+    "create_subdirectories": true,
+    "preserve_timestamps": true,
+    "generate_checksums": true,
+    "compress_output": false
+  },
+  "logging": {
+    "log_level": "INFO",
+    "max_log_size_mb": 100,
+    "keep_log_days": 30,
+    "log_to_file": true,
+    "log_to_console": true
+  },
+  "performance": {
+    "use_threading": true,
+    "max_threads": 4,
+    "memory_limit_mb": 1024,
+    "enable_progress_updates": true
+  },
+  "safety": {
+    "require_confirmation": true,
+    "backup_mode_only": true,
+    "skip_system_files": true,
+    "respect_file_permissions": true
+  }
+}
